@@ -1,0 +1,218 @@
+/* Genel Ayarlar */
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    background-color: #9e5aff;
+    color: #fff42c;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 60px;
+    user-select: none;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.description {
+    margin: 40px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+.nav-title {
+    color: #fff42c;
+    font-size: 33px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-link {
+    color: #fff42c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+    .nav-link:hover {
+        background-color: #fff42c;
+        color: #6A1B9A;
+    }
+
+    /*.nav-link.active {
+        background-color: #FFD300;
+        color: #6A1B9A;
+    }*/
+
+
+.header, .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9e5aff;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+    .header h1, .quiz-header h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+
+.timer {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-display {
+    font-size: 24px;
+    background-color: #FF6A00;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.question-section {
+    margin-top: 20px;
+}
+
+.question-number {
+    font-size: 20px;
+}
+
+.question-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.answers {
+    margin-top: 20px;
+}
+
+.answer-option {
+    background-color: #FFF;
+    color: #000;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .answer-option:hover {
+        background-color: #FFD300;
+        color: #8A3EBF;
+    }
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 70px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    color: #9e5aff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100px;
+        pointer-events: none;
+    }
+
+    .card h2 {
+        font-size: 22px;
+        margin: 30px 0;
+    }
+
+.card-button {
+    font-size: 28px;
+    text-decoration: none;
+    color: #8A3EBF;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.character {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+    .character img {
+        width: 300px;
+        height: auto;
+        transform: rotate(-5deg);
+        transition: transform 0.3s ease;
+    }
+
+        .character img:hover {
+            transform: rotate(0deg) scale(1.1);
+        }
+
+.navigation-buttons {
+    margin-top: 30px;
+}
+
+.nav-button {
+    background-color: #ff7222;
+    color: #FFF;
+    padding: 10px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+    .nav-button:hover {
+        background-color: #fff42c;
+        color: #8A3EBF;
+    }

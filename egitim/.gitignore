@@ -1,0 +1,15 @@
+# Visual Studio geçici dosyalarý ve ayarlarý
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Derleme dosyalarý ve klasörleri
+bin/
+obj/
+
+# Diðer geçici dosyalar
+*.log
+*.tmp
+*.DS_Store

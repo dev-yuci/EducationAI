@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Deneme Dünyası";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <header class="navbar">
+        <h1 class="nav-title">
+            <span>DENEME</span>
+            <span style="display: block;">DÜNYASI</span>
+        </h1>
+        <nav class="nav-links">
+            <a href="#" class="nav-link @(ViewBag.ActivePage == "Anasayfa" ? "active" : "")">ANASAYFA</a>
+            <a href="#" class="nav-link @(ViewBag.ActivePage == "Hakkımızda" ? "active" : "")">HAKKIMIZDA</a>
+            <a href="#" class="nav-link @(ViewBag.ActivePage == "Proje Reposu" ? "active" : "")">PROJE REPOSU</a>
+        </nav>
+    </header>
+
+
+    <div class="description">
+        <p>
+            Eğitime teknolojinin sunduğu olanakları en yüksek şekilde değerlendirmeyi hedefleyerek,
+            öğrencilere sınav hazırlık sürecinde destek olmayı amaçlayan TYT ve AYT deneme sınavı projemiz,
+            yapay zeka teknolojisi ile güçlendirilmiştir.
+        </p>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <img src="/image/atom.png" alt="TYT Denemesi">
+            <h2>TYT DENEMESİ</h2>
+            <a class="card-button" href="@Url.Action("TYT", "Home")">➔</a>
+        </div>
+        <div class="card">
+            <img src="/image/science.png" alt="AYT Denemesi">
+            <h2>AYT DENEMESİ</h2>
+            <a class="card-button" href="@Url.Action("AYT", "Home")">➔</a>
+        </div>
+    </div>
+
+    <div class="character">
+        <img src="/image/karakter-2.png" alt="Character">
+    </div>
+
+</div>
